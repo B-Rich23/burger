@@ -15,7 +15,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Sets up the Express app to handle data parsing and HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
-
+app.use(express.static("public"));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,7 +26,7 @@ app.set("view engine", "handlebars");
 
 
 // Static directory
-app.use(express.static("app/public"));
+// app.use(express.static("app/public/"));
 
 // Routes
 // =============================================================
