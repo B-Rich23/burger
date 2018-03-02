@@ -1,9 +1,41 @@
 body {
-	background-color: lightgray;
+	background-color: #802525;
 	margin-top: 20px;
 }
 
-img {
+img, h2 {
 	width: 200px;
 	height: auto;
+	text-align: center;
+	margin-left: 40%;
+	color: rgb(250, 245, 245)
 }
+
+form, #bgr {
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	margin-left: 252px;
+	color: rgb(250, 245, 245)
+}
+
+button {
+	width: 200px;
+	height: 20px;
+	text-align: center;
+	margin-left: 255px;
+	color: #802525;
+}
+
+p {
+	text-align: center;
+	margin-left: 255px;
+	
+}
+
+/* h5 {
+	text-align: center;
+	margin: 33%
+	/* margin-right: -36px; */
+	
+/* }  */
