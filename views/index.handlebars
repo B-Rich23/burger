@@ -1,25 +1,17 @@
-  </div> 
-
-  <div class="container">
-  
+<div class="container">
     <div class="row">
-  
       <div class="col-md-12">
         <img src="/assets/img/yummy-burger.jpg" alt="burger" class="img-responsive center-block">
       </div>
-  
     </div>
   
     <div class="row">
-  
       <div class="col-md-12">
-        <h2 class="text-center text-danger">Eat-Da-Burger</h2>
+        <h3 class="text-center">Eat-Da-Burger</h2>
       </div>
-  
     </div>
   
-    <div class="row">
-  
+    <div id="uneaten" class="row">
       <div class="col-md-5">
         <h3>Uneaten Burgers</h3>
         <ul>
@@ -39,18 +31,16 @@
       <div class="col-md-2"></div>
   
       <div class="col-md-5">
-        <h3 class="text-muted">Eaten Burgers</h3>
+        <h3 class="eaten">Eaten Burgers</h3>
         <ul>
           {{#each burgers}} {{#if devoured}}
           <li>
-            <h5 class="text-muted">{{id}}. {{burger_name}}</h5>
+          <h5 class="text-muted">{{id}}. {{burger_name}}</h5>
           </li>
           {{/if}} {{/each}}
         </ul>
       </div>
-  
-      <!-- end third row -->
-    </div>
+  </div>
   
     <br>
     <br>
@@ -58,18 +48,14 @@
     <div class="row">
   
       <div class="col-md-12 text-center">
-        <form class="create-update-form" action="/burger/create" method="POST">
+        <form id="create" class="create-form" action="/burger/create" method="POST">
           <div class="form-group">
-            <!-- <label for="bg">Burger Name:</label> -->
             <textarea type="text" name="burger_name"></textarea>
             <br>
             <button class="btn btn-default" type="submit">Submit</button>
-            <h5 class="text-center">Enter a burger you want to eat and click Submit!</h5>
+            <h6 class="text-center">Enter a burger you want to eat and click Submit!</h6>
           </div>
         </form>
       </div>
-  
     </div>
-  
-    
   </div>
